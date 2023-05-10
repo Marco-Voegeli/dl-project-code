@@ -1,0 +1,22 @@
+DATASET:
+  root_dataset: "./data/"
+  list_train: "./datalist/training_hypersim_short.odgt"
+  list_val: "./datalist/validation_hypersim_short.odgt"
+  list_test: "./datalist/testing_hypersim_short.odgt"
+  random_flip: True
+
+MODEL:
+  arch_encoder: "resnet34"
+  arch_decoder: "FPN"
+
+TRAIN:
+  batch_size: 8
+  num_epoch: 25
+  workers: 16
+
+VAL:
+  batch_size: 4
+
+TEST:
+  batch_size: 4
+
